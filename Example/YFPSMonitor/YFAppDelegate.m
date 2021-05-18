@@ -7,12 +7,14 @@
 //
 
 #import "YFAppDelegate.h"
+#import <YFPSMonitor.h>
 
 @implementation YFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [YFPSMonitor showOnlyInDebugMode];
     return YES;
 }
 
